@@ -29,6 +29,7 @@ jobs:
       #     args: --features download-libtorch
 
       - name: update linux
+        if: [${{ matrix.os == 'ubuntu-latest' }}]
         run: sudo apt update 
       - name: update Rust
         run: make install
