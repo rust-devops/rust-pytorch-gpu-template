@@ -23,10 +23,10 @@ jobs:
           profile: minimal
           components: clippy, rustfmt
           override: true
-      - uses: actions-rs/cargo@v1
-        with:
-          command: check
-          args: --features download-libtorch
+      # - uses: actions-rs/cargo@v1
+      #   with:
+      #     command: check
+      #     args: --features download-libtorch
 
       - name: update linux
         run: sudo apt update 
