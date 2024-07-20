@@ -1,0 +1,12 @@
+[package]
+name = "portable-pytorch"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+tract-onnx = { version = "0.21.5", git="https://github.com/sonos/tract" }
+clap = {version="4.5.9", features=["derive"]}
+image = "0.25.1"
+ndarray = "0.15.6"
