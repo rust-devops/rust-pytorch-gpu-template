@@ -3,7 +3,7 @@ use clap::Parser;
 #[derive(Parser)]
 #[clap(
     version = "1.0",
-    author = "Noah Gift",
+    author = "Steven Leong",
     about = "A Stress Test for PyTorch CPU and GPU.  There are three subcommands: cpu, gpu, and tgpu. The tgpu subcommand uses Rayon to send the load to the GPU."
 )]
 struct Cli {
@@ -13,7 +13,7 @@ struct Cli {
 
 #[derive(Parser)]
 enum Commands {
-    #[clap(version = "1.0", author = "Noah Gift")]
+    #[clap(version = "1.0", author = "Steven Leong")]
     Cpu {},
     Gpu {},
     Tgpu {},
